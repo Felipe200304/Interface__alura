@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --azul-botao: #167BF7;
+    --cor-defundo: #00030C;
+    --fonte--textoprincipal: 'Inter';
+    --azul-botao-efeito: #3c92fa;
+}
+
+*{
+    margin :0;
+    padding: 0;
+}
+
+
+body{   /* atributos padrão que todos as outras classes vão herdar pois estão todas dentro do body */
+
+    background-color: var(--cor-defundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte--textoprincipal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal{
+
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;  /* Alinhou os itens para o centre: paragrafo, botões, subtitulo*/
+    text-align: center;   /* Alinhou os textos para centro */
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+section.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao{
+    text-decoration: none;
+    background-color: var(--azul-botao);
+    border-radius: 5px;
+    padding: 1em;  /* espaço entre o conteudo botão*/
+    color: var(--branco-principal);
+    display: block;
+    margin: 1em;
+}
+
+
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+
+.container__aviso{
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+
+.container__imagem{
+
+    margin: 1em 0 2em 0; 
+
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario__imagem{
+
+    width: 80%;
+}
+
+
+
+section.secundario{
+
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em ;
+}
+
+.descricao__texto{
+
+    font-size: 16px;
+    color: var(--cinza-secundario)
+}
+
+
+.secundario__botao{
+
+    display: inline-block;
+
+}
+
+
+
+.container__descricao{
+
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex; /* deixa os itens da em linha*/
+    justify-content: center; /*Alinha os itens para o center */
+    list-style-type: none; /*retira os pontinhos de estilização que vem por padrão*/
+    margin: 5em 0;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size:48px;
+}
+
+.dispositivos__lista{
+    font-size: 25px;
+    color: var(--branco-principal);
+}
+
+
+.rodape{
+    text-align: center; /*Alinhou todos os itens do rodapé para o centro */
+    margin: 5em 5em;
+}
+
+.rodape__lista{
+    display: flex; /*Tirou a lista do formato de coluna e colocou em formato de linha */ 
+    justify-content: center;  /* Coloou a lista no centro alinhado com a imagem que também está no centro */
+    list-style-type: none;    /* Tirou as bolinha de estilização que vem por padrão */
+    margin-top: 1.5em;  /* Criou um espaço entre a lista e a imagem */
+
+}
+
+.lista__links a{ /*Esse é para que a estilização seja aplicada apenas nas ancoras */
+
+   text-decoration: none; /*Tirar a linha sublinhada das ancoras */  
+   margin-left: 1em; /*Para da o espaço entre os links */
+   color: var(--branco-principal);
+}
+
+/* margin:    1 número indica pra cima 2 para baixo, 3 esquerda, 4 direita*/ 
+
+.rodape__texto{
+    margin: 1em 0; /* Margem pra cima e pra baixo */
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.lista__links a:hover{  /* Animação para mudar de cor quando passsa o mouse em cima do link*/
+    color: var(--azul-botao);
+}
+
+.container__botao:hover{
+    background-color: var(--azul-botao-efeito);
+    color: var(--cor-defundo);
+}
+
+

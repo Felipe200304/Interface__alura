@@ -1,0 +1,39 @@
+1 - criação da esturura do html
+2 - criação da variavéis com: ::rott{
+
+    //Definindos as cores que serão usuadas no projeto através das
+    variavéis
+}
+
+3 - usamos *{
+    para zerar a margin e o pading
+    margin: 0;
+}   
+
+4 - mudamos a cor de fundo usando a classe conteudo__body
+
+5 - Inserimos a imagem de fundo
+* porém ela veio cortada e não ocupava a tela interia.
+Resolvemos isso criando um container na classe  <section class="container conteudo__principal">
+e atríbuimos o:
+
+section.container { // esse section é para ele reconhecer
+
+  height: 100vh;
+
+}
+
+
+-  5.5 Resolvemos alguns problemas como o "reflexo" que a imagem estava dando:
+Usando essa propiedade:
+background-repeat: no-repeat;
+
+- 5.6 Resolvemos um problema onde a imagem não ocupava o container completo:
+Usando a propiedade:
+background-size: contain; //onde ele faz a imagem ocupar o container inteiro.
+
+
+6 - criamos as ancoras <a> para os links e estilizamos eles:
+    background-color: var(--azul-botao);
+    border-radius: 5px; arredondamento do botão
+    padding: 1rem; espaço entre o conteudo botão
