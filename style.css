@@ -158,8 +158,7 @@ section.secundario{
    margin-left: 1em; /*Para da o espaço entre os links */
    color: var(--branco-principal);
 }
-
-/* margin:    1 número indica pra cima 2 para baixo, 3 esquerda, 4 direita*/ 
+/* margin:    1 número indica pra cima 2 para baixo, 3 esquerda, 4 direita  hhh*/ 
 
 .rodape__texto{
     margin: 1em 0; /* Margem pra cima e pra baixo */
